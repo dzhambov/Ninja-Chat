@@ -52,19 +52,3 @@ class Chatroom {
     }
   }
 } 
-
-const chatroom = new Chatroom('general','fei');
-
-chatroom.getChats((data) => {
-  console.log(data);
-});
-
-setTimeout(() => {
-  chatroom.updateRoom('gaming');
-  chatroom.updateName('yoshi');
-  chatroom.getChats((data) => {
-    console.log(data);
-  });
-  chatroom.addChats('hello');
-}, 3000);
-
